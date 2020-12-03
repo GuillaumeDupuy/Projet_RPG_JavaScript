@@ -7,20 +7,31 @@
     <title>RPG</title>
 </head>
 <body>
+    <script src="phase.js"></script>
+    <script src="personnage.js"></script>
+    <script src="party.js"></script>
+    <script src="display_choix.js"></script>
+
+
     <div id="choix_perso">
-        <div id="guerrier"></div>
-        <div id="mage"></div>
-        <div id="paladin"></div>
-        <div id="assassin"></div>
+        <div class="perso" id="guerrier"> 
+            <p> <script type="text/javascript"> display_choix("guerrier");  </script> </p>
+        </div>
+        <div class="perso" id="mage">
+            <p> <script type="text/javascript"> display_choix("mage");  </script> </p>
+        </div>
+        <div class="perso" id="paladin">
+            <p> <script type="text/javascript"> display_choix("paladin");  </script> </p>
+        </div>
+        <div class="perso" id="assassin">
+            <p> <script type="text/javascript"> display_choix("assassin");  </script> </p>
+        </div>
     </div>
     <div id="phase_de_combat">
 
 
     </div>
-    <button onclick="showPerso()">monter choix perso</button>
-    <button onclick="showCombat()">montrer combat</button>
-    <script src="phase.js"></script>
-    <script src="personnage.js"></script>
-    <script src="party.js"></script>
+    <button class="showperso" onclick="showPerso()">monter choix perso</button>
+    <button class="showcombat" onclick="showCombat()">montrer combat</button>
 </body>
 </html>

@@ -1,15 +1,25 @@
 #choix_perso{
-    width: 20px;
-    height: 20px;
+    width: 700px;
+    height: 700px;
     background-color: orange;
-    display: block;
     position: absolute;
+    z-index: 2;
+    left: 30%;
+    top: 12%;
 }
 
 #phase_de_combat{
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
     background-color: orchid;
-    display: none;
     position: absolute;
+}
+
+.perso{
+    border: solid black 1px;
+    width: 47%;
+    height: 47%;
+    position: relative;
+    display: inline-flex;
+    margin: 1%;
 }
