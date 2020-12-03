@@ -7,10 +7,64 @@ function personnage(name, classe, joueur, perso_type)
         case "guerrier":
 
             this.hpm = 100;
-            this.hp = this.hpmax;
+            this.hp = this.hpm;
 
             this.mpm = 100;
-            this.mp = this.mpmax;
+            this.mp = this.mpm;
+
+            this.att = 100;
+            this.def = 100;
+
+            this.pui = 100;
+            this.mr = 100;
+
+            this.esq = 100;
+            this.vit = 100;
+
+            break;
+        case "mage":
+
+            this.hpm = 100;
+            this.hp = this.hpm;
+
+            this.mpm = 100;
+            this.mp = this.mpm;
+
+            this.att = 100;
+            this.def = 100;
+
+            this.pui = 100;
+            this.mr = 100;
+
+            this.esq = 100;
+            this.vit = 100;
+
+            break;
+        case "paladin":
+
+            this.hpm = 100;
+            this.hp = this.hpm;
+
+            this.mpm = 100;
+            this.mp = this.mpm;
+
+            this.att = 100;
+            this.def = 100;
+
+            this.pui = 100;
+            this.mr = 100;
+
+            this.esq = 100;
+            this.vit = 100;
+
+            break;
+        case "assassin":
+
+            this.hpm = 100;
+            this.hp = this.hpm;
+
+            this.mpm = 100;
+            this.mp = this.mpm;
 
             this.att = 100;
             this.def = 100;
@@ -33,10 +87,10 @@ function personnage(name, classe, joueur, perso_type)
             case "guerrier":
     
                 this.hpm = 100;
-                this.hp = this.hpmax;
+                this.hp = this.hpm;
     
                 this.mpm = 100;
-                this.mp = this.mpmax;
+                this.mp = this.mpm;
     
                 this.att = 100;
                 this.def = 100;

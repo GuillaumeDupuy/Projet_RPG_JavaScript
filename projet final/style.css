@@ -1,0 +1,15 @@
+#choix_perso{
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    display: block;
+    position: absolute;
+}
+
+#phase_de_combat{
+    width: 20px;
+    height: 20px;
+    background-color: orchid;
+    display: none;
+    position: absolute;
+}
