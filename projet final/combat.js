@@ -1,16 +1,16 @@
 function combat(joueur, monstre)
 {
-    let finished = 0
+    var finished = 0
     if (joueur.vit < monstre.vit)
     {
-        let turn = 0;
+        var turn = 0;
     }
     else
     {
-        let turn = 1;
+        var turn = 1;
     }
     
-    while (not (finished)) {
+    while (!(finished)) {
         if (turn)
         {
             choix = wait_click();

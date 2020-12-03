@@ -1,9 +1,21 @@
-function showPerso(){
-    document.getElementById("choix_perso").style.display="block";
-    document.getElementById("phase_de_combat").style.display="none";
+function clicChoix(){
+    $("#guerrier").click(function(){
+        startGame("guerrier");
+    });
+    $("#mage").click(function(){
+        startGame("mage");
+    });
+    $("#paladin").click(function(){
+        startGame("paladin");
+    });
+    $("#assassin").click(function(){
+        startGame("assassin");
+    });
 }
 
-function showCombat(){
-    document.getElementById("choix_perso").style.display="none";
-    document.getElementById("phase_de_combat").style.display="block";
+function startGame(classe){
+    joueur = new personnage("joueur",classe,0,1);
+    console.log(joueur.name);
+    $("#choix_perso").addClass("hide");
+    combat(joueur, new personnage("monstre","guerrier",0,0));
 }

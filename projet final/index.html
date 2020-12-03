@@ -7,11 +7,12 @@
     <title>RPG</title>
 </head>
 <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="phase.js"></script>
     <script src="personnage.js"></script>
-    <script src="party.js"></script>
     <script src="display_choix.js"></script>
-
+    <script src="combat.js"></script>
 
     <div id="choix_perso">
         <div class="perso" id="guerrier"> 
@@ -29,9 +30,14 @@
     </div>
     <div id="phase_de_combat">
 
+        <div class="actions" id="attaque"></div>
+        <div class="actions" id="sort"></div>
+        <div class="actions" id="deffendre"></div>
+        <div class="actions" id="fuir"></div>
 
     </div>
-    <button class="showperso" onclick="showPerso()">monter choix perso</button>
-    <button class="showcombat" onclick="showCombat()">montrer combat</button>
+
+    <script src="startPorgramme.js"></script>
+
 </body>
 </html>
