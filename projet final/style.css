@@ -15,8 +15,10 @@
 #phase_de_combat{
     width: 99%;
     height: 99%;
-    background-color: orchid;
+    background-image: url(images/382vb6.png);
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .perso{
@@ -33,4 +35,39 @@
     display: none;
     border: solid black 2px;
     position: absolute;
+}
+
+.div_action {
+    width: 600px;
+    height: 200px;
+    background-color: red;
+    left: 35%;
+    position: absolute;
+    top: 79%;
+}
+
+.div_shop{
+    width: 200px;
+    height: 800px;
+    background-color:blue;
+    right: 0%;
+    position: absolute;
+    top:8%;
+}
+
+.actions{
+    width: 47%;
+    height: 42%;
+    position: relative;
+    display: inline-flex;
+    margin: 1%;
+    border: solid black 1px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.div_perso {
+    height: 200px;
+    width: 400px;
+    background-color: purple;
 }
