@@ -15,7 +15,7 @@
 #phase_de_combat{
     width: 99%;
     height: 99%;
-    background-image: url(images/382vb6.png);
+    background-image: url(images/terrain_terre.png);
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,4 +70,45 @@
     height: 200px;
     width: 400px;
     background-color: purple;
+}
+
+.shop{
+    width: 95%;
+    height: 95px;
+    border: solid black 1px;
+    position: relative;
+    display: inline-flex;
+    color: white;
+}
+
+.div_personnage{
+    background-image: url(images/assassin.png);
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    bottom: 0%;
+}
+
+.div_monstre{
+    background-image: url(images/dragon_style.png);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 60%;
+    top: 10%;
+}
+
+.perso_img{
+    background-image: url(images/assassin.png);
+
+}
+.div_perso_stats{
+    position: relative;
+    border: solid black 1px;
+}
+.div_perso_div{
+    width: 45%;
+    height: 95%;
+    display: inline-flex;
+    position: relative;
 }
