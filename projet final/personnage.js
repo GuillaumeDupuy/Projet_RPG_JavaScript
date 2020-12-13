@@ -86,20 +86,20 @@ function personnage(name, classe, joueur, perso_type)
         switch (classe) {
             case "guerrier":
     
-                this.hpm = 100;
+                this.hpm = joueur.hpm*0.9;
                 this.hp = this.hpm;
     
-                this.mpm = 100;
+                this.mpm = joueur.mpm*0.1;
                 this.mp = this.mpm;
     
-                this.att = 30;
-                this.def = 10;
+                this.att = joueur.att*0.60;
+                this.def = joueur.def*0.30;
     
-                this.pui = 100;
-                this.mr = 100;
+                this.pui = joueur.pui*0.1;
+                this.mr = joueur.mr*0.4;
     
-                this.esq = 100;
-                this.vit = 100;
+                this.esq = joueur.esq*0.50;
+                this.vit = joueur.vit*1;
     
                 break;
             default:

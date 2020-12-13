@@ -22,5 +22,5 @@ function startGame(classe){
     console.log(joueur.classe);
     $("#choix_perso").addClass("hide");
     personnage_choisit(joueur);
-    combat(joueur, new personnage("monstre","guerrier",0,0));
+    combat(joueur, new personnage("monstre","guerrier",joueur,0));
 }

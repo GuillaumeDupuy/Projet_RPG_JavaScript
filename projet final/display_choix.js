@@ -15,17 +15,17 @@ function display_choix(perso)
 }
 
 function personnage_choisit(classe){
-    document.getElementById("perso_stats_vie").innerHTML = classe.hp;
-    document.getElementById("perso_stats_points_magie").innerHTML = classe.mpm;
-    document.getElementById("perso_stats_attaque").innerHTML = classe.att;
-    document.getElementById("perso_stats_def").innerHTML = classe.def;
-    document.getElementById("perso_stats_magie").innerHTML = classe.pui;
-    document.getElementById("perso_stats_def_magie").innerHTML = classe.mr;
-    document.getElementById("perso_stats_esquive").innerHTML = classe.esq;
-    document.getElementById("perso_stats_vitesse").innerHTML = classe.vit;
-    document.getElementById("thune").innerHTML = classe.argent;
+    document.getElementById("perso_stats_vie").innerHTML ="vie : " + classe.hp + '/' + classe.hpm;
+    document.getElementById("perso_stats_points_magie").innerHTML = "mana : " + classe.mpm;
+    document.getElementById("perso_stats_attaque").innerHTML = "attaque : " + classe.att;
+    document.getElementById("perso_stats_def").innerHTML = "defense : " + classe.def;
+    document.getElementById("perso_stats_magie").innerHTML = "magie : " + classe.pui;
+    document.getElementById("perso_stats_def_magie").innerHTML = "defense magique : " + classe.mr;
+    document.getElementById("perso_stats_esquive").innerHTML = "esquive : " + classe.esq;
+    document.getElementById("perso_stats_vitesse").innerHTML = "vitesse : " + classe.vit;
+    document.getElementById("thune").innerHTML = "argent : " + classe.argent;
 }
 
 function monstre_afficher(classe){
-    document.getElementById("stats_monstre").innerHTML = classe.hp;
+    document.getElementById("stats_monstre").innerHTML = (classe.hp - classe.hp%1) + "/" + classe.hpm ;
 }

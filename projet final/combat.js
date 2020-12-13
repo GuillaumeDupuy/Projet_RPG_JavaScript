@@ -1,14 +1,6 @@
 function combat(joueur, monstre)
 {
     var finished = 0
-    if (joueur.vit < monstre.vit)
-    {
-        var turn = 0;
-    }
-    else
-    {
-        var turn = 1;
-    }
         $("#attaque").click(function(){
             if(joueur.att - monstre.def > 0){
                 monstre.hp -= joueur.att - monstre.def;
@@ -98,9 +90,15 @@ function combat(joueur, monstre)
         $("#stats_monstre").toggleClass("hide");
         $("#div_action").toggleClass("hide");
         $("#div_monstre").toggleClass("hide");
-        monstre = new personnage("monstre","guerrier",0,0);
+        monstre = new personnage("monstre","guerrier",joueur,0);
         monstre_afficher(monstre);
     });
+
+    $("#div_personnage").click(function(){
+        $("#div_perso").toggleClass("hide");
+    });
+
+
 
     if (finished == 1)
     {
