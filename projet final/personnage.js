@@ -15,7 +15,7 @@ function personnage(name, classe, joueur, perso_type)
             this.att = 100;
             this.def = 80;
 
-            this.pui = 5;
+            this.pui = 10;
             this.mr = 80;
 
             this.esq = 100;
@@ -92,8 +92,8 @@ function personnage(name, classe, joueur, perso_type)
                 this.mpm = 100;
                 this.mp = this.mpm;
     
-                this.att = 100;
-                this.def = 100;
+                this.att = 30;
+                this.def = 10;
     
                 this.pui = 100;
                 this.mr = 100;

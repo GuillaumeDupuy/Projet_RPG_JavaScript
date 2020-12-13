@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>RPG</title>
 </head>
-<body>
+<body id="body">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="phase.js"></script>
@@ -33,7 +33,6 @@
 
 
         <div class="div_perso" id="div_perso">
-            <div class="div_perso_div" class="perso_img"></div>
             <div class="div_perso_div" class="div_perso_stats">
                 <div class="perso_stats" id="perso_stats_vie"></div>
                 <div class="perso_stats" id="perso_stats_points_magie"> </div>
@@ -44,8 +43,9 @@
                 <div class="perso_stats" id="perso_stats_esquive"> </div>
                 <div class="perso_stats" id="perso_stats_vitesse"> </div>
             </div>
+            <div class="thune" id="thune"></div>
         </div>
-            
+
 
         <div class="div_action" id="div_action">
             <div class="actions" id="attaque">attaquer</div>
@@ -54,11 +54,11 @@
             <div class="actions" id="fuir">fuir</div>
         </div>
 
-        <div class="div_shop" id="shop_div_shop">
+        <div class="div_shop hide" id="shop_div_shop">
             <div class="shop" id="shop_point_de_vie">points de vie</div>
             <div class="shop" id="shop_points_magie">points de magie</div>
             <div class="shop" id="shop_attaque">attaque</div>
-            <div class="shop" id="shop_def">deffense</div>
+            <div class="shop" id="shop_def">defense</div>
             <div class="shop" id="shop_magie">magie</div>
             <div class="shop" id="shop_def_magie">défense magique</div>
             <div class="shop" id="shop_esquive">esquive</div>
@@ -74,6 +74,8 @@
         </div>
 
         <div class="stats_monstre" id="stats_monstre"></div>
+
+        <div class="combat_suivant hide" id="combat_suivant">NEXT</div>
 
     </div>
 

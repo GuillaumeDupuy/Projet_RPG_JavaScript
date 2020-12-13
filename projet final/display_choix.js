@@ -15,7 +15,7 @@ function display_choix(perso)
 }
 
 function personnage_choisit(classe){
-    document.getElementById("perso_stats_vie").innerHTML = classe.hpm;
+    document.getElementById("perso_stats_vie").innerHTML = classe.hp;
     document.getElementById("perso_stats_points_magie").innerHTML = classe.mpm;
     document.getElementById("perso_stats_attaque").innerHTML = classe.att;
     document.getElementById("perso_stats_def").innerHTML = classe.def;
@@ -23,6 +23,7 @@ function personnage_choisit(classe){
     document.getElementById("perso_stats_def_magie").innerHTML = classe.mr;
     document.getElementById("perso_stats_esquive").innerHTML = classe.esq;
     document.getElementById("perso_stats_vitesse").innerHTML = classe.vit;
+    document.getElementById("thune").innerHTML = classe.argent;
 }
 
 function monstre_afficher(classe){

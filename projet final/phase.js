@@ -1,15 +1,19 @@
 function clicChoix(){
     $("#guerrier").click(function(){
         startGame("guerrier");
+        document.getElementById("div_personnage").style.backgroundImage = "url(images/guerrier.png)"
     });
     $("#mage").click(function(){
         startGame("mage");
+        document.getElementById("div_personnage").style.backgroundImage = "url(images/mage.png)"
     });
     $("#paladin").click(function(){
         startGame("paladin");
+        document.getElementById("div_personnage").style.backgroundImage = "url(images/paladin.png)"
     });
     $("#assassin").click(function(){
         startGame("assassin");
+        document.getElementById("div_personnage").style.backgroundImage = "url(images/assassin.png)"
     });
 }
 

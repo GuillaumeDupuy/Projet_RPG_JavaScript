@@ -82,11 +82,12 @@
 }
 
 .div_personnage{
-    background-image: url(images/assassin.png);
     position: absolute;
     width: 500px;
     height: 700px;
     bottom: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .div_monstre{
@@ -126,4 +127,11 @@
     position: absolute;
     right: 30%;
     top: 0%;
+}
+
+.combat_suivant{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0%;
 }
