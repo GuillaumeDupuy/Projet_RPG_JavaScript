@@ -69,11 +69,13 @@
 
 .shop{
     width: 95%;
-    height: 95px;
+    height: 57px;
     border: solid black 1px;
     position: relative;
     display: inline-flex;
     color: white;
+    text-align: center;
+    padding: 10%;
 }
 
 .div_personnage{
