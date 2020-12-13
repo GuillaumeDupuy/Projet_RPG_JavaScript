@@ -13,6 +13,7 @@
     <script src="personnage.js"></script>
     <script src="display_choix.js"></script>
     <script src="combat.js"></script>
+    <script src="boutique.js"></script>
 
     <div id="choix_perso">
         <div class="perso" id="guerrier"> 
@@ -34,15 +35,16 @@
         <div class="div_perso" id="div_perso">
             <div class="div_perso_div" class="perso_img"></div>
             <div class="div_perso_div" class="div_perso_stats">
-                <div class="perso_stats" class="perso_stats_vie">points de vie</div>
-                <div class="perso_stats" class="perso_stats_points_magie">points de magie</div>
-                <div class="perso_stats" class="perso_stats_attaque">attaque</div>
-                <div class="perso_stats" class="perso_stats_def">deffense</div>
-                <div class="perso_stats" class="perso_stats_magie">magie</div>
-                <div class="perso_stats" class="perso_stats_def_magie">défense magique</div>
-                <div class="perso_stats" class="perso_stats_esquive">esquive</div>
-                <div class="perso_stats" class="perso_stats_vitesse">vitesse</div>
+                <div class="perso_stats" id="perso_stats_vie"></div>
+                <div class="perso_stats" id="perso_stats_points_magie"> </div>
+                <div class="perso_stats" id="perso_stats_attaque"> </div>
+                <div class="perso_stats" id="perso_stats_def"> </div>
+                <div class="perso_stats" id="perso_stats_magie"> </div>
+                <div class="perso_stats" id="perso_stats_def_magie"> </div>
+                <div class="perso_stats" id="perso_stats_esquive"> </div>
+                <div class="perso_stats" id="perso_stats_vitesse"> </div>
             </div>
+        </div>
             
 
         <div class="div_action" id="div_action">
@@ -70,6 +72,8 @@
         <div class="div_monstre" id="div_monstre">
 
         </div>
+
+        <div class="stats_monstre" id="stats_monstre"></div>
 
     </div>
 

@@ -9,41 +9,38 @@ function combat(joueur, monstre)
     {
         var turn = 1;
     }
+        $("#attaque").click(function(){
+            monstre.hp -= joueur.att - monstre.def;
+            console.log(monstre.hp);
+            monstre_afficher(monstre);
+        });
     
-    while (!(finished)) {
-        if (turn)
-        {
-            choix = wait_click();
-            switch (choix) {
-                case 1:
-                    Action(joueur,monstre,"attaque");
-                    break;
-                case 2:
-                    Action(joueur,monstre,"lancer sort");
-                    break;
-                case 3:
-                    Action(joueur,monstre,"fuir");
-                    break;
-                default:
-                    Action(joueur,monstre,"defendre");
-                    break;
-            }
-        }
-        else
-        {
-            Action(monstre,joueur,"attaque");
-        }
-        
+    // Action(joueur,monstre,"attaque");
+    // while (!(finished)) {
 
-        if (monstre.hp <=0)
-        {
-            finished = 1;
-        }
-        else if (joueur.hp <=0)
-        {
-            finished = 2;
-        }
-    }
+    //     if (turn){
+    //         if ($("#attaque").click)
+    //         {
+    //             monstre.hp -= joueur.att - monstre.def;
+    //             turn +=1;
+    //             finished = 1
+    //             console.log("bite");
+    //         }
+    //     }
+
+    //     if (monstre.hp <=0)
+    //     {
+    //         finished = 1;
+    //     }
+    //     else if (joueur.hp <=0)
+    //     {
+    //         finished = 2;
+    //     }
+    //     personnage_choisit(joueur);
+    //     monstre_afficher(monstre);
+    // }
+    personnage_choisit(joueur);
+    monstre_afficher(monstre);
 
     if (finished == 1)
     {
@@ -53,4 +50,5 @@ function combat(joueur, monstre)
     {
         console.log("you loose")
     }
+    boutique(joueur);
 }

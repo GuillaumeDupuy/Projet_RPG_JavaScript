@@ -111,4 +111,19 @@
     height: 95%;
     display: inline-flex;
     position: relative;
+    border: solid black 1px;
+}
+
+.perso_stats{
+    position: relative;
+    display : inline-flex;
+    width: 90%;
+}
+.stats_monstre {
+    background-color: green;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    right: 30%;
+    top: 0%;
 }

@@ -15,7 +15,8 @@ function clicChoix(){
 
 function startGame(classe){
     joueur = new personnage("joueur",classe,0,1);
-    console.log(joueur.name);
+    console.log(joueur.classe);
     $("#choix_perso").addClass("hide");
+    personnage_choisit(joueur);
     combat(joueur, new personnage("monstre","guerrier",0,0));
 }
